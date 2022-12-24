@@ -1,0 +1,27 @@
+// MEDIA QUERIES
+
+@mixin bp($point) {
+  
+  $xs: "(min-width: 300px)";
+  $sm: "(min-width: 800px)";
+  $md: "(min-width: 1000px)";
+  $lg: "(min-width: 1400px)";
+  $xl: "(min-width: 1800px)";
+
+  @if $point == xs {
+    @media #{$xs} { @content; }
+  }
+  @else if $point == sm {
+    @media #{$sm} { @content; }
+  }
+  @else if $point == md {
+    @media #{$md} { @content; }
+  }
+  @else if $point == lg {
+    @media #{$lg}  { @content; }
+  }
+  @else if $point == xl {
+    @media #{$xl}  { @content; }
+  }
+
+}

@@ -1,0 +1,96 @@
+header {
+	padding: $md-space;
+
+	@include customize(theme) {background: getValue(bg-dark);}
+}
+
+#logo {
+	display: block;
+	@include bp(xs) {width: 120px;}
+	@include bp(md) {width: 180px;}
+
+	svg {@include customize(theme) {fill: getValue(brand-main);}}
+
+	span {
+		display: block;
+		position: relative;
+		bottom: 5px;
+
+		@include bp(xs) {@include text-setting(xs);}
+		@include bp(md) {@include text-setting(sm);}
+		
+		font-family: $font-display;
+		text-transform: uppercase;
+		font-style: oblique;
+		letter-spacing: .5em;
+		text-align: center;
+		
+		@include customize(theme) {color: getValue(text-dark);}
+
+		&:hover, &:visited {
+			@include customize(theme) {color: getValue(text-dark);}
+		}
+	}
+}
+
+#mobile-menu-toggle {display: none;}
+
+#mobile-menu-btn {
+	@include bp(xs) {
+		display: inline;
+		position: absolute;
+		top: 0; right: 0;
+		padding: $md-space;
+		cursor: pointer;
+	}
+
+	@include bp(md) {display: none;}
+}
+
+#main-menu {
+	@include bp(xs) {display: none;}
+	@include bp(md) {display: block;}
+}
+
+#mobile-menu-toggle:checked ~ #main-menu {
+	@include bp(xs) {display: block;}
+}
+
+#main-nav {
+	margin-top: $md-space;
+}
+
+#theme-toggle {
+	display: inline-block;
+
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+
+	@include text-setting(md);
+	line-height: unset;
+
+	cursor: pointer;
+	
+	@include customize(theme) {
+		color: getValue(text-base);
+		background: getValue(btn-bg);
+		border: $border-size solid getValue(btn-border);
+	}
+
+	&:hover {
+		@include customize(theme) {
+			color: getValue(brand-main);
+			background: getValue(btn-bg-hover);
+			border: $border-size solid getValue(btn-border-hover);
+		}
+	}
+}
+
+.theme-light #theme-toggle::before {
+	content: "\263E";
+}
+
+.theme-dark #theme-toggle::before {
+	content: "\263C";
+}

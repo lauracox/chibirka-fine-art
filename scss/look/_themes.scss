@@ -1,0 +1,94 @@
+// COLORS
+
+$white: #faf2ed;
+$cream: #ebdfd8;
+
+$black: #1a1818;
+$charcoal: #212020;
+
+$grey: #665959;
+$mist: #998a8a;
+
+$terracotta: #d8664c;
+$burntsienna: #a54e3a;
+
+
+// https://medium.com/@sanuthadathil/theme-and-color-scheme-sass-way-a62d68614ef3
+
+
+$themes: (
+  light: (
+    brand-main: $burntsienna,
+    brand-main-light: $terracotta,
+    bg-light: $white,
+    bg-dark: $cream,
+    bg-grad: linear-gradient($cream, white 25% 85%, $cream),
+    text-base: $charcoal,
+    text-light: $grey,
+    text-dark: $black,
+    text-link: $burntsienna,
+    text-link-hover: $terracotta,
+    btn-text: $charcoal,
+    btn-text-hover: $burntsienna,
+    btn-bg: transparent,
+    btn-bg-hover: $white,
+    btn-border: $mist,
+    btn-border-hover: $burntsienna,
+    menu-text: $grey,
+    menu-text-hover: $charcoal,
+    menu-bg: fade-out($white, .1),
+    menu-bg-hover: $cream,
+  ),
+  dark: (
+    brand-main: $terracotta,
+    brand-main-dark: $burntsienna,
+    bg-light: $charcoal,
+    bg-dark: $black,
+    bg-grad: linear-gradient($black, $charcoal 25% 85%, $black),
+    text-base: $cream,
+    text-light: $mist,
+    text-dark: $white,
+    text-link: $terracotta,
+    text-link-hover: $burntsienna,
+    btn-text: $cream,
+    btn-text-hover: $terracotta,
+    btn-bg: transparent,
+    btn-bg-hover: $black,
+    btn-border: $mist,
+    btn-border-hover: $terracotta,
+    menu-text: $mist,
+    menu-text-hover: $cream,
+    menu-bg: fade-out($black, .1),
+    menu-bg-hover: $charcoal,
+  ),
+);
+
+
+//FUNCTION
+
+@mixin customize($arg: theme) {
+  $array: $themes;
+  $prefix: theme;
+
+  @each $theme, $map in $array {
+    .#{$prefix}-#{$theme} & {
+      $array-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($array, $theme), '#{$key}');
+        $array-map: map-merge($array-map, ($key: $value)) !global;
+      }
+
+      @content;
+      $array-map: null !global;
+    }
+  }
+}
+
+
+@function getValue($key) {
+  @return map-get($array-map, $key);
+}
+
+
+//OVERRIDES
+

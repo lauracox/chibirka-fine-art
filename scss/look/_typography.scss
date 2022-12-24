@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quando&family=Yrsa:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-display: "Quando", "Didot", "Times New Roman", serif;
+$font-sub: "Yrsa","Tahoma", "Verdana", sans-serif;
+$font-body: "Yrsa","Helvetica", "Arial", sans-serif;
+$font-caption: "Yrsa","Courier", "Lucida Console", monospace;
+
+body {
+  font-size: 16px;
+}
+
+// https://codeburst.io/a-successful-sass-theme-structure-ca9d1c477dc7
+
+$base-font-size: 1rem;
+$base-line-height: 1.25 * $base-font-size;
+
+$text-settings: (
+  'xs': (
+    font-size: .75rem,
+    line-height: $base-line-height
+  ),
+  'sm': (
+    font-size: .875rem,
+    line-height: $base-line-height
+  ),
+  'base': (
+    font-size: 1rem,
+    line-height: $base-line-height
+  ),
+  'md': (
+    font-size: 1.125rem,
+    line-height: $base-line-height + .25
+  ),
+  'lg': (
+    font-size: 1.25rem,
+    line-height: $base-line-height + .25
+  ),
+  'xl': (
+    font-size: 1.5rem,
+    line-height: $base-line-height + .25
+  ),
+  'xxl': (
+    font-size: 2rem,
+    line-height: $base-line-height + .5
+  ),
+  'xxxl': (
+    font-size: 3rem,
+    line-height: $base-line-height + .75
+  )
+);
+
+@function text-scale($level) {
+  @return map-get(map-get($text-settings, $level), 'font-size');
+}
+
+@function line-height($level) {
+  @return map-get(map-get($text-settings, $level), 'line-height');
+}
+
+@mixin text-setting($level) {
+  font-size: text-scale($level);
+  line-height: line-height($level);
+}
+
+
+// Headers
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-display;
+  margin: .5em 0 .25em 0;
+  @include customize(theme) {color: getValue(brand-main);}
+}
+
+h1 {
+  @include text-setting(xxxl);
+}
+
+h2 {
+  @include text-setting(xxl);
+}
+
+h3 {
+  @include text-setting(xl);
+}
+
+h4 {
+  @include text-setting(lg);
+}
+
+h5 {
+  @include text-setting(md);
+}
+
+h6 {
+  @include text-setting(md);
+}
+
+
+// Links
+
+a {
+  font-family: $font-body;
+  @include text-setting(base);
+  text-decoration: none;
+  @include customize(theme) {color: getValue(text-link);}
+}
+a:visited {}
+a:hover {@include customize(theme) {color: getValue(text-link-hover);}}
+a:active {}
+
+// Other text
+
+p, ol, ul, figure, hr, dl {
+  font-family: $font-body;
+  @include text-setting(base);
+  @include customize(theme) {color: getValue(text-base);}
+}
+p {}
+ol, ul {}
+li {}
+pre {font-family: $font-caption;}
+blockquote {font-family: $font-caption;}
+figure {font-family: $font-caption;}
+dl {}
