@@ -105,9 +105,6 @@
 			&#next {padding-left: $sm-space;}
 
 			span {
-				position: relative;
-				top: 2px;
-
 				padding: 0 $xs-space;
 				line-height: 1em;
 				font-style: normal;
@@ -129,7 +126,7 @@
 
 		img {
 			@include bp(xs) {height: 60px;}
-			@include bp(md) {}
+			@include bp(md) {height: 100px;}
 		}
 		
 	}

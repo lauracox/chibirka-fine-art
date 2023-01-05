@@ -1,16 +1,19 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quando&family=Yrsa:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* https://hankchizljaw.com/wrote/a-modern-css-reset/ EDITED */
 /* Box sizing rules */
-@import url("https://fonts.googleapis.com/css2?family=Quando&family=Yrsa:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* Remove default padding */
 ul, ol,
 ul[class],
 ol[class] {
-  padding: 0; }
+  padding: 0;
+}
 
 /* Remove default margin */
 body,
@@ -29,29 +32,34 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0; }
+  margin: 0;
+}
 
 /* Set core body defaults */
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.25; }
+  line-height: 1.25;
+}
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul, ol,
 ul[class],
 ol[class] {
-  list-style: none; }
+  list-style: none;
+}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto; }
+  text-decoration-skip-ink: auto;
+}
 
 /* Make images easier to work with */
 img {
   max-width: 100%;
-  display: block; }
+  display: block;
+}
 
 /* Natural flow and rhythm in articles by default 
 article > * + * {
@@ -63,11 +71,13 @@ input,
 button,
 textarea,
 select {
-  font: inherit; }
+  font: inherit;
+}
 
 button {
   padding: 0;
-  border-style: none; }
+  border-style: none;
+}
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -75,7 +85,9 @@ button {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important; } }
+    scroll-behavior: auto !important;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -87,7 +99,8 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Sections
    ========================================================================== */
@@ -95,13 +108,15 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Render the `main` element consistently in IE.
  */
 main {
-  display: block; }
+  display: block;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -109,7 +124,8 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -123,7 +139,8 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -133,7 +150,8 @@ pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -141,7 +159,8 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -153,14 +172,16 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -172,13 +193,15 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -189,13 +212,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -203,7 +229,8 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /* Forms
    ========================================================================== */
@@ -223,7 +250,8 @@ textarea {
   line-height: 1.15;
   /* 1 */
   margin: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Show the overflow in IE.
@@ -232,7 +260,8 @@ textarea {
 button,
 input {
   /* 1 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -241,41 +270,46 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 0.35em 0.75em 0.625em; }
+  padding: 0.35em 0.75em 0.625em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -295,53 +329,60 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -351,7 +392,8 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Interactive
    ========================================================================== */
@@ -359,13 +401,15 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
-  display: block; }
+  display: block;
+}
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-  display: list-item; }
+  display: list-item;
+}
 
 /* Misc
    ========================================================================== */
@@ -373,170 +417,229 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-  display: none; }
+  display: none;
+}
 
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Quando", "Didot", "Times New Roman", serif;
-  margin: .5em 0 .25em 0; }
-  .theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4, .theme-light h5, .theme-light h6 {
-    color: #a54e3a; }
-  .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
-    color: #d8664c; }
+  margin: 0.5em 0 0.25em 0;
+}
+.theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4, .theme-light h5, .theme-light h6 {
+  color: #a54e3a;
+}
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: #d8664c;
+}
 
 h1 {
   font-size: 3rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+}
 
 h2 {
   font-size: 2rem;
-  line-height: 1.75rem; }
+  line-height: 1.75rem;
+}
 
 h3 {
   font-size: 1.5rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+}
 
 h4 {
   font-size: 1.25rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+}
 
 h5 {
   font-size: 1.125rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+}
 
 h6 {
   font-size: 1.125rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+}
 
 a {
   font-family: "Yrsa", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   line-height: 1.25rem;
-  text-decoration: none; }
-  .theme-light a {
-    color: #a54e3a; }
-  .theme-dark a {
-    color: #d8664c; }
+  text-decoration: none;
+}
+.theme-light a {
+  color: #a54e3a;
+}
+.theme-dark a {
+  color: #d8664c;
+}
 
 .theme-light a:hover {
-  color: #d8664c; }
+  color: #d8664c;
+}
 .theme-dark a:hover {
-  color: #a54e3a; }
+  color: #a54e3a;
+}
 
 p, ol, ul, figure, hr, dl {
   font-family: "Yrsa", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
-  line-height: 1.25rem; }
-  .theme-light p, .theme-light ol, .theme-light ul, .theme-light figure, .theme-light hr, .theme-light dl {
-    color: #212020; }
-  .theme-dark p, .theme-dark ol, .theme-dark ul, .theme-dark figure, .theme-dark hr, .theme-dark dl {
-    color: #ebdfd8; }
+  line-height: 1.25rem;
+}
+.theme-light p, .theme-light ol, .theme-light ul, .theme-light figure, .theme-light hr, .theme-light dl {
+  color: #212020;
+}
+.theme-dark p, .theme-dark ol, .theme-dark ul, .theme-dark figure, .theme-dark hr, .theme-dark dl {
+  color: #ebdfd8;
+}
 
 pre {
-  font-family: "Yrsa", "Courier", "Lucida Console", monospace; }
+  font-family: "Yrsa", "Courier", "Lucida Console", monospace;
+}
 
 blockquote {
-  font-family: "Yrsa", "Courier", "Lucida Console", monospace; }
+  font-family: "Yrsa", "Courier", "Lucida Console", monospace;
+}
 
 figure {
-  font-family: "Yrsa", "Courier", "Lucida Console", monospace; }
+  font-family: "Yrsa", "Courier", "Lucida Console", monospace;
+}
 
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 header {
   position: fixed;
-  z-index: 5; }
-  @media (min-width: 300px) {
-    header {
-      width: 100%;
-      height: 80px; } }
-  @media (min-width: 1000px) {
-    header {
-      width: 300px;
-      height: 100%; } }
+  z-index: 5;
+}
+@media (min-width: 300px) {
+  header {
+    width: 100%;
+    height: 80px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    width: 300px;
+    height: 100%;
+  }
+}
 
 aside {
-  display: none; }
+  display: none;
+}
 
 main {
-  position: absolute; }
-  @media (min-width: 300px) {
-    main {
-      width: 100%;
-      height: calc(100% - 80px);
-      bottom: 0;
-      padding: 10px 20px; } }
-  @media (min-width: 1000px) {
-    main {
-      width: calc(100% - 300px);
-      height: 100%;
-      right: 0;
-      padding: 20px; } }
+  position: absolute;
+}
+@media (min-width: 300px) {
+  main {
+    width: 100%;
+    height: calc(100% - 80px);
+    bottom: 0;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    width: calc(100% - 300px);
+    height: 100%;
+    right: 0;
+    padding: 20px;
+  }
+}
 
 footer {
-  width: 100%; }
-  @media (min-width: 1000px) {
-    footer {
-      position: absolute;
-      bottom: 10px; } }
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  footer {
+    position: absolute;
+    bottom: 10px;
+  }
+}
 
 header {
-  padding: 20px; }
-  .theme-light header {
-    background: #ebdfd8; }
-  .theme-dark header {
-    background: #1a1818; }
+  padding: 20px;
+}
+.theme-light header {
+  background: #ebdfd8;
+}
+.theme-dark header {
+  background: #1a1818;
+}
 
 #logo {
-  display: block; }
-  @media (min-width: 300px) {
-    #logo {
-      width: 120px; } }
-  @media (min-width: 1000px) {
-    #logo {
-      width: 180px; } }
-  .theme-light #logo svg {
-    fill: #a54e3a; }
-  .theme-dark #logo svg {
-    fill: #d8664c; }
+  display: block;
+}
+@media (min-width: 300px) {
+  #logo {
+    width: 120px;
+  }
+}
+@media (min-width: 1000px) {
+  #logo {
+    width: 180px;
+  }
+}
+.theme-light #logo svg {
+  fill: #a54e3a;
+}
+.theme-dark #logo svg {
+  fill: #d8664c;
+}
+#logo span {
+  display: block;
+  position: relative;
+  font-family: "Quando", "Didot", "Times New Roman", serif;
+  text-transform: uppercase;
+  font-style: oblique;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+@media (min-width: 300px) {
   #logo span {
-    display: block;
-    position: relative;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    bottom: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  #logo span {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     bottom: 5px;
-    font-family: "Quando", "Didot", "Times New Roman", serif;
-    text-transform: uppercase;
-    font-style: oblique;
-    letter-spacing: .5em;
-    text-align: center; }
-    @media (min-width: 300px) {
-      #logo span {
-        font-size: 0.75rem;
-        line-height: 1.25rem; } }
-    @media (min-width: 1000px) {
-      #logo span {
-        font-size: 0.875rem;
-        line-height: 1.25rem; } }
-    .theme-light #logo span {
-      color: #1a1818; }
-    .theme-dark #logo span {
-      color: #faf2ed; }
-    .theme-light #logo span:hover, .theme-light #logo span:visited {
-      color: #1a1818; }
-    .theme-dark #logo span:hover, .theme-dark #logo span:visited {
-      color: #faf2ed; }
+  }
+}
+.theme-light #logo span {
+  color: #1a1818;
+}
+.theme-dark #logo span {
+  color: #faf2ed;
+}
+.theme-light #logo span:hover, .theme-light #logo span:visited {
+  color: #1a1818;
+}
+.theme-dark #logo span:hover, .theme-dark #logo span:visited {
+  color: #faf2ed;
+}
 
 #mobile-menu-toggle {
-  display: none; }
+  display: none;
+}
 
 @media (min-width: 300px) {
   #mobile-menu-btn {
@@ -545,175 +648,266 @@ header {
     top: 0;
     right: 0;
     padding: 20px;
-    cursor: pointer; } }
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1.75rem;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .theme-light #mobile-menu-btn {
+    color: #a54e3a;
+  }
+  .theme-dark #mobile-menu-btn {
+    color: #d8664c;
+  }
+}
 @media (min-width: 1000px) {
   #mobile-menu-btn {
-    display: none; } }
+    display: none;
+  }
+}
 
 @media (min-width: 300px) {
   #main-menu {
-    display: none; } }
+    display: none;
+    width: 110%;
+    margin: -20px;
+    padding: 20px;
+  }
+}
 @media (min-width: 1000px) {
   #main-menu {
-    display: block; } }
+    display: block;
+  }
+}
+.theme-light #main-menu {
+  background: #ebdfd8;
+}
+.theme-dark #main-menu {
+  background: #1a1818;
+}
 
 @media (min-width: 300px) {
   #mobile-menu-toggle:checked ~ #main-menu {
-    display: block; } }
+    display: block;
+  }
+}
 
 #main-nav {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
+#main-nav ul {
+  padding: 10px;
+}
+#main-nav h5 {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
 
 #theme-toggle {
   display: inline-block;
   width: 35px;
   height: 35px;
   border-radius: 50%;
+  margin: 20px 0;
   font-size: 1.125rem;
   line-height: 1.5rem;
   line-height: unset;
-  cursor: pointer; }
-  .theme-light #theme-toggle {
-    color: #212020;
-    background: transparent;
-    border: 1.5px solid #998a8a; }
-  .theme-dark #theme-toggle {
-    color: #ebdfd8;
-    background: transparent;
-    border: 1.5px solid #998a8a; }
-  .theme-light #theme-toggle:hover {
-    color: #a54e3a;
-    background: #faf2ed;
-    border: 1.5px solid #a54e3a; }
-  .theme-dark #theme-toggle:hover {
-    color: #d8664c;
-    background: #1a1818;
-    border: 1.5px solid #d8664c; }
+  cursor: pointer;
+}
+.theme-light #theme-toggle {
+  color: #212020;
+  background: transparent;
+  border: 1.5px solid #998a8a;
+}
+.theme-dark #theme-toggle {
+  color: #ebdfd8;
+  background: transparent;
+  border: 1.5px solid #998a8a;
+}
+.theme-light #theme-toggle:hover {
+  color: #a54e3a;
+  background: #faf2ed;
+  border: 1.5px solid #a54e3a;
+}
+.theme-dark #theme-toggle:hover {
+  color: #d8664c;
+  background: #1a1818;
+  border: 1.5px solid #d8664c;
+}
 
 .theme-light #theme-toggle::before {
-  content: "\263E"; }
+  content: "☾";
+}
 
 .theme-dark #theme-toggle::before {
-  content: "\263C"; }
+  content: "☼";
+}
 
 #gallery {
   display: grid;
-  overflow: hidden; }
-  .theme-light #gallery {
-    background: linear-gradient(#ebdfd8, white 25% 85%, #ebdfd8); }
-  .theme-dark #gallery {
-    background: linear-gradient(#1a1818, #212020 25% 85%, #1a1818); }
-  @media (min-width: 300px) {
-    #gallery {
-      grid-template-columns: 1fr;
-      grid-template-rows: 70vh 1fr 2fr;
-      grid-template-areas: "painting" "controls" "thumbnails"; } }
-  #gallery #paintings {
-    grid-area: painting; }
-  #gallery #paintings div {
-    height: 100%; }
-  #gallery .slide {
-    display: grid; }
-    #gallery .slide img {
-      place-self: center;
-      max-height: 50vh;
-      margin: 0 auto;
-      box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.25); }
-  #gallery .painting-info {
-    display: inline-block;
-    height: max-content !important;
-    width: max-content;
-    align-self: end;
-    padding: 10px 20px; }
-    .theme-light #gallery .painting-info {
-      background: rgba(250, 242, 237, 0.9); }
-    .theme-dark #gallery .painting-info {
-      background: rgba(26, 24, 24, 0.9); }
-    #gallery .painting-info h4 {
-      font-size: 1.125rem;
-      line-height: 1.5rem;
-      font-weight: normal;
-      font-style: oblique; }
-      @media (min-width: 300px) {
-        #gallery .painting-info h4 {
-          line-height: .5em; } }
-      @media (min-width: 1000px) {
-        #gallery .painting-info h4 {
-          line-height: 1em; } }
-    #gallery .painting-info .group {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-      @media (min-width: 300px) {
-        #gallery .painting-info .group {
-          margin-bottom: 2.5px; } }
-      @media (min-width: 1000px) {
-        #gallery .painting-info .group {
-          margin-bottom: 5px; } }
-    #gallery .painting-info .size {
-      font-size: 1.125rem;
-      line-height: 1.5rem; }
-      @media (min-width: 300px) {
-        #gallery .painting-info .size {
-          line-height: .5em; } }
-      @media (min-width: 1000px) {
-        #gallery .painting-info .size {
-          line-height: 1em; } }
-    #gallery .painting-info .materials, #gallery .painting-info .year {
-      display: inline; }
-    #gallery .painting-info .sale {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      font-style: oblique; }
-  #gallery #controls {
-    grid-area: controls;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between; }
-    #gallery #controls button {
-      padding: 5px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-family: "Yrsa", "Helvetica", "Arial", sans-serif;
-      font-size: 1.125rem;
-      line-height: 1.5rem;
-      line-height: 1em;
-      font-style: oblique;
-      vertical-align: middle; }
-      .theme-light #gallery #controls button {
-        background: transparent;
-        color: #665959; }
-      .theme-dark #gallery #controls button {
-        background: transparent;
-        color: #998a8a; }
-      .theme-light #gallery #controls button:hover {
-        background: #faf2ed;
-        color: #a54e3a; }
-      .theme-dark #gallery #controls button:hover {
-        background: #1a1818;
-        color: #d8664c; }
-      #gallery #controls button#previous {
-        padding-right: 10px; }
-      #gallery #controls button#next {
-        padding-left: 10px; }
-      #gallery #controls button span {
-        position: relative;
-        top: 2px;
-        padding: 0 5px;
-        line-height: 1em;
-        font-style: normal; }
-  #gallery #thumbnails {
-    grid-area: thumbnails;
-    display: flex;
-    flex-flow: row nowrap; }
-    #gallery #thumbnails .thumb-slide {
-      margin-right: 10px;
-      opacity: 0.5; }
-    #gallery #thumbnails .thumb-slide.tns-nav-active {
-      opacity: 1; }
-    @media (min-width: 300px) {
-      #gallery #thumbnails img {
-        height: 60px; } }
+  overflow: hidden;
+}
+.theme-light #gallery {
+  background: linear-gradient(#ebdfd8, white 25% 85%, #ebdfd8);
+}
+.theme-dark #gallery {
+  background: linear-gradient(#1a1818, #212020 25% 85%, #1a1818);
+}
+@media (min-width: 300px) {
+  #gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70vh 1fr 2fr;
+    grid-template-areas: "painting" "controls" "thumbnails";
+  }
+}
+#gallery #paintings {
+  grid-area: painting;
+}
+#gallery #paintings div {
+  height: 100%;
+}
+#gallery .slide {
+  display: grid;
+}
+#gallery .slide img {
+  place-self: center;
+  max-height: 50vh;
+  margin: 0 auto;
+  box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+#gallery .painting-info {
+  display: inline-block;
+  height: max-content !important;
+  width: max-content;
+  align-self: end;
+  padding: 10px 20px;
+}
+.theme-light #gallery .painting-info {
+  background: rgba(250, 242, 237, 0.9);
+}
+.theme-dark #gallery .painting-info {
+  background: rgba(26, 24, 24, 0.9);
+}
+#gallery .painting-info h4 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-style: oblique;
+}
+@media (min-width: 300px) {
+  #gallery .painting-info h4 {
+    line-height: 0.5em;
+  }
+}
+@media (min-width: 1000px) {
+  #gallery .painting-info h4 {
+    line-height: 1em;
+  }
+}
+#gallery .painting-info .group {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media (min-width: 300px) {
+  #gallery .painting-info .group {
+    margin-bottom: 2.5px;
+  }
+}
+@media (min-width: 1000px) {
+  #gallery .painting-info .group {
+    margin-bottom: 5px;
+  }
+}
+#gallery .painting-info .size {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 300px) {
+  #gallery .painting-info .size {
+    line-height: 0.5em;
+  }
+}
+@media (min-width: 1000px) {
+  #gallery .painting-info .size {
+    line-height: 1em;
+  }
+}
+#gallery .painting-info .materials, #gallery .painting-info .year {
+  display: inline;
+}
+#gallery .painting-info .sale {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: oblique;
+}
+#gallery #controls {
+  grid-area: controls;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#gallery #controls button {
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Yrsa", "Helvetica", "Arial", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  line-height: 1em;
+  font-style: oblique;
+  vertical-align: middle;
+}
+.theme-light #gallery #controls button {
+  background: transparent;
+  color: #665959;
+}
+.theme-dark #gallery #controls button {
+  background: transparent;
+  color: #998a8a;
+}
+.theme-light #gallery #controls button:hover {
+  background: #faf2ed;
+  color: #a54e3a;
+}
+.theme-dark #gallery #controls button:hover {
+  background: #1a1818;
+  color: #d8664c;
+}
+#gallery #controls button#previous {
+  padding-right: 10px;
+}
+#gallery #controls button#next {
+  padding-left: 10px;
+}
+#gallery #controls button span {
+  padding: 0 5px;
+  line-height: 1em;
+  font-style: normal;
+}
+#gallery #thumbnails {
+  grid-area: thumbnails;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#gallery #thumbnails .thumb-slide {
+  margin-right: 10px;
+  opacity: 0.5;
+}
+#gallery #thumbnails .thumb-slide.tns-nav-active {
+  opacity: 1;
+}
+@media (min-width: 300px) {
+  #gallery #thumbnails img {
+    height: 60px;
+  }
+}
+@media (min-width: 1000px) {
+  #gallery #thumbnails img {
+    height: 100px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
